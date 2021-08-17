@@ -14,28 +14,51 @@
 <body> <div class="wrapper">
         <h2>Sign Up</h2>
         <p>Veuillez remplir le formulaire pour créer un compte.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form action="register-page.php"  method="post" onsubmit="return checked();">
             <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-                <span class="invalid-feedback"><?php echo $username_err; ?></span>
+                <label> Fisrt Name</label>
+                <input type="text" class="form-control" id="first_name" name="first_name"
+                placeholder="First Name" maxlength="30" required
+                value="<?php if (isset($_POST['first_name'])) echo $_POST['first_name']; ?>" >
             </div>    
+
+            <div class="form-group">
+                <label>Last_namae</label>
+                <input type="text" class="form-control" id="last_name" name="last_name"
+                placeholder="Last Name" maxlength="40" required
+                value="<?php if (isset($_POST['last_name'])) echo $_POST['last_name']; ?>">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" id="email" name="email"
+                placeholder="test@example.com" maxlength="40" required
+                value="<?php if (isset($_POST['email'])) echo $_POST['email']; ?>">
+            </div>
+
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
-                <span class="invalid-feedback"><?php echo $password_err; ?></span>
+                <input type="password" class="form-control" id="password1" name="password1"
+                placeholder="Pawword" maxlength="8" required
+                value="<?php if (isset($_POST['password1'])) echo $_POST['password1']; ?>">
+                <span id='message'>Between 8 and 12 characters.</span>
             </div>
+
             <div class="form-group">
                 <label>Confirm Password</label>
-                <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
-                <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
+                <input type="password" class="form-control" id="password2" name="password2"
+                placeholder="Confirm Pawword" maxlength="8" required
+                value="<?php if (isset($_POST['password2'])) echo $_POST['password2']; ?>">
             </div>
+          
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
                 <input type="reset" class="btn btn-secondary ml-2" value="Reset">
             </div>
             <p>Already have an account? <a href="../login/login.php">Login here</a>.</p>
         </form>
+
+       
     </div>    
     
 </body>
