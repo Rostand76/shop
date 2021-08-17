@@ -36,6 +36,6 @@
 </head>
 
 <body>
-<?php include('header.php');  ?>
+<?php include('header.php');?>
 </body>
 </html>
