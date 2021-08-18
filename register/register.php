@@ -11,14 +11,22 @@
     </style>
     <title>Enregistrer un Compte</title>
 </head>
-<body> <div class="wrapper">
-        <h2>Sign Up</h2>
+       
+ <body>
+    
+     <?php
+     if($_SERVER['REQUEST_METHOD'] == 'POST') {
+         require('process-register-page.php');
+        } // End of the main Submit conditional.
+        ?>
+     <div class="wrapper">
+         <h2>Sign Up</h2>
         <p>Veuillez remplir le formulaire pour créer un compte.</p>
-        <form action="register-page.php"  method="post" onsubmit="return checked();">
+        <form action="register.php"  method="post" onsubmit="return checked();">
             <div class="form-group">
                 <label> Fisrt Name</label>
                 <input type="text" class="form-control" id="first_name" name="first_name"
-                placeholder="First Name" maxlength="30" required
+                placeholder="first Name" maxlength="30" required
                 value="<?php if (isset($_POST['first_name'])) echo $_POST['first_name']; ?>" >
             </div>    
 
