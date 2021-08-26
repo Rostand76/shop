@@ -10,6 +10,7 @@
         .wrapper{ width: 360px; padding: 20px; }
     </style>
     <title>Enregistrer un Compte</title>
+    <script src="../js/verify.js"></script>
 </head>
        
  <body>

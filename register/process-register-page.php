@@ -9,32 +9,36 @@
     }
     //check for first name:
     $last_name=trim($_POST['last_name']);
-    if(empty(last_name)){
+    if(empty($last_name)){
         $errors[]='Vous avez oublié d inserer votre prenom ';
     }
     //check for email:
     $email=trim($_POST['email']);
-    if(empty(email)){
+    if(empty($email)){
         $errors[]='Vous avez oublié d inserer votre email ';
     }
     //verfication des mots de passse
     $password1=trim($_POST['password1']);
     $password2=trim($_POST['password2']);
-    if ($password1 !== $password2) {
-       $errors [] ='Vos mots de passe ne correspondent pas';
-    }
-    else {
-        $errors [] = 'vous avez oublié d entrer votre de masse';
-    }
+
+     if (!empty($password1)) {
+        if ($password1 !== $password2) {
+            $errors [] ='Vos mots de passe ne correspondent pas';
+         }
+    } else {
+             $errors [] = 'vous avez oublié d entrer votre de passe';
+         }
+   
+   
     if (empty($errors)) {
         //si tout est ok!
     try {
         //enregistrement dans la base de donnée
         //crytage de la du mot de passe 
         $hashed_password=password_hash($password1, PASSWORD_DEFAULT);
-        require('mysqli_connect.sql'); //connexion à la base donnée
+        require('mysqli_connect.php'); //connexion à la base donnée
         // execution de la requete
-        $query = "INSERT TO users (userid, first_nmae, last_name, email, password, registration_date )";
+        $query = "INSERT INTO users (userid, first_nmae, last_name, email, passwd, registration_date )";
             $query .="VALUES('',?,?,?,?,NOW() )";
         $q=mysqli_stmt_init($dbcon);
         mysqli_stmt_prepare($q, $query);
@@ -57,9 +61,7 @@
          //echo '<p>' . mysqli_error($dbcon) . '<br><br>Query: ' . $query . '</p>';
          mysqli_close($dbcon); // Close the database connection.
          // include footer then close program to stop execution
-          echo '<footer class="jumbotron text-center col-sm-12"style="padding-bottom:1px; padding-top:8px;">
-          include("footer.php");
-          </footer>';
+          echo '<footer class="jumbotron text-center col-sm-12"style="padding-bottom:1px; padding-top:8px;"> include("footer.php"); </footer>';
           exit();
      }
     } 
@@ -68,19 +70,19 @@
       // print "An Exception occurred. Message: " . $e->getMessage();
       print "The system is busy please try later";
     }
-      catch(Error $e)
+     catch(Error $e)
       {
-     //print "An Error occurred. Message: " . $e->getMessage();
-     print "The system is busy please try again later.";
+        //print "An Error occurred. Message: " . $e->getMessage();
+        print "The system is busy please try again later.";
+     }
     }
-    } 
-     else { // Report the errors.                                                 #12
+      else {
         $errorstring = "Error! The following error(s) occurred:<br>";
         foreach ($errors as $msg) { // Print each error.
             $errorstring .= " - $msg<br>\n";
-        }
-        $errorstring .= "Please try again.<br>";
-        echo "<p class=' text-center col-sm-2' style='color:red'>$errorstring</p>";
-    }
-    
+      }
+            $errorstring .= "Please try again.<br>";
+        echo "<p class=' text-center col-sm-2' style='color:red'>$errorstring</p>";  
+     } 
+
 ?>
