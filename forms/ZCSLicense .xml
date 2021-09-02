@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ZimbraLicense verifier="ZV2">
+  <item name="AccountsLimit" value="825"/>
+  <item name="ArchivingAccountsLimit" value="25"/>
+  <item name="AttachmentConversionEnabled" value="true"/>
+  <item name="AttachmentIndexingAccountsLimit" value="850"/>
+  <item name="BackupEnabled" value="true"/>
+  <item name="CrossMailboxSearchEnabled" value="true"/>
+  <item name="EwsAccountsLimit" value="25"/>
+  <item name="HierarchicalStorageManagementEnabled" value="true"/>
+  <item name="ISyncAccountsLimit" value="825"/>
+  <item name="InstallType" value="regular"/>
+  <item name="IssuedOn" value="20210902140716Z"/>
+  <item name="IssuedToEmail" value="elisabetea@gti.es,gti_licensing_team@gti.es,sales@third.cm,william.fokoue@cca-bank.com"/>
+  <item name="IssuedToName" value="CCA Bank"/>
+  <item name="LicenseId" value="0e6857d8-0f57-4734-a2fc-ab8bd50ce3e1"/>
+  <item name="MAPIConnectorAccountsLimit" value="25"/>
+  <item name="MobileSyncAccountsLimit" value="25"/>
+  <item name="MobileSyncEnabled" value="true"/>
+  <item name="ResellerName" value="Third Sarl"/>
+  <item name="SMIMEAccountsLimit" value="825"/>
+  <item name="TouchClientsAccountsLimit" value="825"/>
+  <item name="TwoFactorAuthAccountsLimit" value="825"/>
+  <item name="ValidFrom" value="20210901000000Z"/>
+  <item name="ValidUntil" value="20991231170000Z"/>
+  <item name="VoiceAccountsLimit" value="825"/>
+  <item name="ZSSAccountsLimit" value="0"/>
+  <item name="ZXAccountsLimit" value="0"/>
+  <item name="ZXDesktopAccountsLimit" value="0"/>
+  <item name="ZXWebAccountsLimit" value="0"/>
+  <signature value="5586efe9d8c87b1378fce2e47a50c75166dc19adeb1292aa8c14fff41457f7d623f69f5b29a900a69f865ceb9db05a26734d6c6125e8a0963866ad513f41d2f381fda953c403969d0915797e32491a0240df46e2d9727883251d52a7389df02f5319670a04fb3efd9d8bbcb996a13d40071e7eae33f143478bdd4690c2eda8b1d94df18c5abba57ccae13dea1475b886760f236543bed33fd793844f779dd38e7a19eb9396114a0c1a6dd45083e45a0de58dff2141b5e4f436c52ed545465f67d5e9665c977e7ff3fa46be134ccdc2dbf313af2a18748d14f4901c4fe834a48bf2a5b7367601a7fd26bcbd79929a7ec1838d015a83e521d2287a6a7e7185a30a" key="zk1"/>
+</ZimbraLicense>
