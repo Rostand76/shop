@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ZimbraLicense verifier="ZV2">
+  <item name="AccountsLimit" value="825"/>
+  <item name="ArchivingAccountsLimit" value="25"/>
+  <item name="AttachmentConversionEnabled" value="true"/>
+  <item name="AttachmentIndexingAccountsLimit" value="850"/>
+  <item name="BackupEnabled" value="true"/>
+  <item name="CrossMailboxSearchEnabled" value="true"/>
+  <item name="EwsAccountsLimit" value="25"/>
+  <item name="HierarchicalStorageManagementEnabled" value="true"/>
+  <item name="ISyncAccountsLimit" value="825"/>
+  <item name="InstallType" value="regular"/>
+  <item name="IssuedOn" value="20210902140716Z"/>
+  <item name="IssuedToEmail" value="elisabetea@gti.es,gti_licensing_team@gti.es,sales@third.cm,william.fokoue@cca-bank.com"/>
+  <item name="IssuedToName" value="CCA Bank"/>
+  <item name="LicenseId" value="0e6857d8-0f57-4734-a2fc-ab8bd50ce3e1"/>
+  <item name="MAPIConnectorAccountsLimit" value="25"/>
+  <item name="MobileSyncAccountsLimit" value="25"/>
+  <item name="MobileSyncEnabled" value="true"/>
+  <item name="ResellerName" value="Third Sarl"/>
+  <item name="SMIMEAccountsLimit" value="825"/>
+  <item name="TouchClientsAccountsLimit" value="825"/>
+  <item name="TwoFactorAuthAccountsLimit" value="825"/>
+  <item name="ValidFrom" value="20210901000000Z"/>
+  <item name="ValidUntil" value="20991231170000Z"/>
+  <item name="VoiceAccountsLimit" value="825"/>
+  <item name="ZSSAccountsLimit" value="0"/>
+  <item name="ZTalkAccountsLimit" value="0"/>
+  <signature value="2fbfe08b46e4423aba6ae016cc7f29d5bb4962975fcdcd6b3fe9e2230f7bb09c5c18709bd1119bca4e24418865fdc5845974a9a328f7e48caf472054dc576b3a147fda4999b86d0a90ddcdf24da6d9c78c9d046f272e63dc2578058ea24fc475d553e1587765a67517e95132e482c6919205e987496792cc728b853f12746c7beb2d1d1d51dcfb6f97bbc61500974ea87e68e05ed19459d3ac7759072743e0e1e36432cc40d7ab8f21a95722f2567f61a8c9b2f419f023cdcfe41ad43f15bcc7ce13044ddea9dd83151570b6b1af56c6a67775efc0e508f21dd77718670bfdba6867e5862b1ef5a972f532e5dce8d13c4c5b487bf9be7644c17f12375034c47f" key="zk1"/>
+</ZimbraLicense>
